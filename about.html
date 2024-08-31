@@ -1,0 +1,79 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+	<meta http-equiv="content-type" content="text/html" />
+	<meta name="author" content="Madushan Wickramaarachchi" />
+    <meta name="viewport" content="width=device-width , initial-scale=1.0" />
+   
+	<title>website for flora</title>
+    <link rel="stylesheet" href="main.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;600;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+  <section class="sub-header">
+    <nav>
+        <a href="index.html"><img src="img/HASC-logos_white.png"/></a>
+        <div class="nav-links" id="nav-links">
+            <i class="fa fa-times" onclick="hideMenu()"></i>
+            <ul>
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="about.html">ABOUT</a></li>
+                <li><a href="products1.html">PRODUCTS</a></li>
+                 <li><a href="contact.html">CONTACT</a></li>
+                 <li><a href="cart.html">CART</a></li>
+                 <li><a href="reg.html" class="login-icon">LOGIN & REGISTER</a></li>
+            </ul>
+        </div>
+        <i class="fa fa-bars" onclick="showMenu()"></i>
+    </nav>
+    <h1>About Us</h1>
+  </section>  
+
+<!------- about us content ------->
+
+<section class="about-us">
+    <div class="row">
+        <div class="about-col">
+            <h1>WHO ARE WE ?</h1>
+            <p>We are Blooms, a team of technology enthusiasts and floral industry experts committed to transforming the way flower shops operate. Our mission is to simplify the intricate processes of flower shop management, enabling florists to focus on what truly matters—their creativity and connection with customers. We recognize that managing a flower shop involves more than just arranging flowers; it requires meticulous attention to inventory, order fulfillment, customer service, and financial tracking.
+
+                Understanding these demands, we created Blooms, a comprehensive and user-friendly management system tailored specifically for florists. Our platform offers seamless solutions for tracking inventory, managing customer orders, scheduling deliveries, and even handling billing and payments. By automating these tasks, Blooms reduces the administrative burden on florists, allowing them to dedicate more time to their craft and customer interactions.
+                
+                We believe that every bouquet tells a story, and our goal is to support florists in telling those stories with ease and efficiency. At Blooms, we’re not just providing software; we’re offering a partnership that helps florists grow their businesses, enhance their customer relationships, and bring more beauty into the world through their artistry. Whether you're a small boutique or a large flower shop, Blooms is here to ensure your operations run smoothly, so your flowers can always be the star of the show.</p>
+            <a href="" class="hero-btn red-btn">EXPLORE NOW</a>
+        </div>
+        <div class="about-col">
+            <img src="img/about.jpg" />
+        </div>
+    </div>
+</section>
+
+
+<!-- Footer -->
+<section class="footer">
+     <h4>About Us </h4>
+      <p>we're passionate about helping florists thrive. Our flower shop management system is designed to make running your business easier, so you can focus on crafting beautiful arrangements. <br> We believe in simplicity, efficiency, and supporting the creativity that makes every bouquet special.</p>
+     <div class="icons">
+        <i class="fa fa-facebook"></i>
+        <i class="fa fa-twitter"></i>
+        <i class="fa fa-instagram"></i>
+        <i class="fa fa-linkedin"></i>
+     </div>
+   
+</section>
+<!-- Javascript -->
+<script>
+    var navLink = document.getElementById('nav-links');
+    function showMenu(){
+        navLink.style.right = "0";
+    }
+     function hideMenu(){
+        navLink.style.right = "-200px";
+    }
+</script>
+</body>
+</html>

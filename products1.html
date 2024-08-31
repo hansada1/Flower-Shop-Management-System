@@ -1,0 +1,151 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+	<meta http-equiv="content-type" content="text/html" />
+	<meta name="author" content="Madushan Wickramaarachchi" />
+    <meta name="viewport" content="width=device-width , initial-scale=1.0" />
+   
+	<title>Our University Web Site</title>
+    <link rel="stylesheet" href="main.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;600;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+    <section class="sub-header">
+      <nav>
+          <a href="index.html"><img src="img/HASC-logos_white.png" alt="Blooms Hase Logo"/></a>
+          <div class="nav-links" id="nav-links">
+              <i class="fa fa-times" onclick="hideMenu()"></i>
+             <ul>
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="about.html">ABOUT</a></li>
+                <li><a href="products1.html">PRODUCTS</a></li>
+                 <li><a href="contact.html">CONTACT</a></li>
+                 <li><a href="cart.html">CART</a></li>
+                 <li><a href="reg.html" class="login-icon">LOGIN & REGISTER</a></li>
+              </ul>
+          </div>
+          <i class="fa fa-bars" onclick="showMenu()"></i>
+      </nav>
+      <h1>PRODUCTS</h1>
+    </section>  
+  
+  <!-- ---- Offers Section ------------ -->
+  <section class="offer">
+      <h1>Our Products</h1>
+      <p>Blooms Hase transforms your flower shop into a thriving business by streamlining operations, enhancing customer experiences, and nurturing growth with ease.</p>
+        
+      <div class="row">
+          <div class="offer-col">
+              <h3>Fresh Flowers</h3>
+              <p>Our fresh flowers are handpicked from trusted growers to guarantee the highest quality and freshness. We source our blooms daily, ensuring that every petal is vibrant, fragrant, and long-lasting. Whether you're looking for seasonal flowers, exotic varieties, or classic favorites, we provide a diverse selection that caters to all tastes and preferences.</p>
+          </div>
+          <div class="offer-col">
+              <h3>Flower Decorations</h3>
+              <p>Blooms Hase excels in creating bespoke flower decorations that transform any event or space into a stunning visual experience. Our expert floral designers work closely with you to craft unique arrangements that perfectly capture the theme and mood of your occasion.</p>
+          </div>
+          <div class="offer-col">
+              <h3>Flower Bouquets</h3>
+              <p>Our flower bouquets are expertly crafted to convey your sentiments and enhance any occasion. From romantic roses and cheerful sunflowers to sophisticated mixed arrangements, we offer a diverse selection of bouquets tailored to your needs.</p>
+          </div>
+      </div>
+  </section>
+  
+  <!-- ---- Product Items Section ------------ -->
+  <section class="facilities">
+      <h1>Our Product Items</h1>
+      <p>Blooms Hase transforms your flower shop into a thriving business by streamlining operations, enhancing customer experiences, and nurturing growth with ease.</p>
+      <div class="row">
+          <div class="facilities-col" id="product-1">
+              <img src="img/bouquet1.jpg" alt="Blossoming Love"/>
+              <h3>Blossoming Love</h3>
+              <p class="price">LKR18,000.00</p>
+              <p>Blossoming love is like a flower in spring, delicate and full of promise...</p>
+              <button onclick="addToCart(1, 'Blossoming Love', 18000, 'img/bouquet1.jpg')">Add to Cart</button>
+          </div>
+           <div class="facilities-col" id="product-2">
+              <img src="img/bouquet2.jpg" alt="Succulents Wedding Flowers"/>
+              <h3>Succulents Wedding Flowers</h3>
+              <p class="price">LKR20,000.00</p>
+              <p>Succulents bring a unique and modern touch to wedding flowers, blending the beauty of nature with a sense of resilience...</p>
+              <button onclick="addToCart(2, 'Succulents Wedding Flowers', 20000, 'img/bouquet2.jpg')">Add to Cart</button>
+          </div>
+           <div class="facilities-col" id="product-3">
+              <img src="img/bouquet3.jpg" alt="Regal Purple Chrysanthemum Flowers"/>
+              <h3>Regal Purple Chrysanthemum Flowers</h3>
+              <p class="price">LKR17,000.00</p>
+              <p>A Pretty Little Flowers bouquet is a charming blend of delicate blooms that exude sweetness and grace...</p>
+              <button onclick="addToCart(3, 'Regal Purple Chrysanthemum Flowers', 17000, 'img/bouquet3.jpg')">Add to Cart</button>
+          </div>
+      </div>
+  </section>
+  
+  <section class="facilities">
+      
+      <div class="row">
+          <div class="facilities-col" id="product-4">
+              <img src="img/bouquet4.jpg" alt="Trendy Flowers Wedding Bouquet"/>
+              <h3>Trendy Flowers Wedding Bouquet</h3>
+              <p class="price">LKR8,000.00</p>
+              <p>A Trendy Flowers wedding bouquet combines modern aesthetics with timeless romance...</p>
+              <button onclick="addToCart(4, 'Trendy Flowers Wedding Bouquet', 8000, 'img/bouquet4.jpg')">Add to Cart</button>
+          </div>
+           <div class="facilities-col" id="product-5">
+              <img src="img/bouquet5.jpg" alt="Sweetheart’s Rose Bouquet"/>
+              <h3>Sweetheart’s Rose Bouquet</h3>
+              <p class="price">LKR12,000.00</p>
+              <p>A Sweetheart’s Rose bouquet is a classic symbol of love and devotion...</p>
+              <button onclick="addToCart(5, 'Sweetheart’s Rose Bouquet', 12000, 'img/bouquet5.jpg')">Add to Cart</button>
+          </div>
+           <div class="facilities-col" id="product-6">
+              <img src="img/bouquet6.jpg" alt="Pretty Little Flowers Bouquet"/>
+              <h3>Pretty Little Flowers Bouquet</h3>
+              <p class="price">LKR10,000.00</p>
+              <p>A Pretty Little Flowers bouquet is a delightful mix of petite, vibrant blooms...</p>
+              <button onclick="addToCart(6, 'Pretty Little Flowers Bouquet', 10000, 'img/bouquet6.jpg')">Add to Cart</button>
+          </div>
+      </div>
+  </section>
+  
+  <!-- Footer -->
+  <section class="footer">
+       <h4>About Us </h4>
+        <p>We're passionate about helping florists thrive. Our flower shop management system is designed to make running your business easier, so you can focus on crafting beautiful arrangements. <br> We believe in simplicity, efficiency, and supporting the creativity that makes every bouquet special.</p>
+       <div class="icons">
+          <i class="fa fa-facebook"></i>
+          <i class="fa fa-twitter"></i>
+          <i class="fa fa-instagram"></i>
+          <i class="fa fa-linkedin"></i>
+       </div>
+  </section>
+
+  <!-- Javascript -->
+  <script>
+      var navLink = document.getElementById('nav-links');
+      function showMenu(){
+          navLink.style.right = "0";
+      }
+       function hideMenu(){
+          navLink.style.right = "-200px";
+      }
+
+      function addToCart(id, name, price, image) {
+          const cartItems = JSON.parse(localStorage.getItem('cart')) || [];
+          const itemIndex = cartItems.findIndex(item => item.id === id);
+
+          if (itemIndex > -1) {
+              cartItems[itemIndex].quantity += 1;
+          } else {
+              cartItems.push({ id, name, price, image, quantity: 1 });
+          }
+
+          localStorage.setItem('cart', JSON.stringify(cartItems));
+          alert(name + ' has been added to your cart!');
+          window.location.href = 'cart.html';
+      }
+  </script>
+</body>
+</html>

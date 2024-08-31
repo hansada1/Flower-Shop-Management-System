@@ -1,0 +1,102 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+	<meta http-equiv="content-type" content="text/html" />
+	<meta name="author" content="Madushan Wickramaarachchi" />
+    <meta name="viewport" content="width=device-width , initial-scale=1.0" />
+   
+	<title>website for flora</title>
+    <link rel="stylesheet" href="main.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;600;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+  <section class="sub-header">
+    <nav>
+        <a href="index.html"><img src="img/HASC-logos_white.png"/></a>
+        <div class="nav-links" id="nav-links">
+            <i class="fa fa-times" onclick="hideMenu()"></i>
+            <ul>
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="about.html">ABOUT</a></li>
+                <li><a href="products1.html">PRODUCTS</a></li>
+                 <li><a href="contact.html">CONTACT</a></li>
+                 <li><a href="cart.html">CART</a></li>
+                 <li><a href="reg.html" class="login-icon">LOGIN & REGISTER</a></li>
+            </ul>
+        </div>
+        <i class="fa fa-bars" onclick="showMenu()"></i>
+    </nav>
+    <h1>Contact Us</h1>
+  </section>  
+
+<!------- Contact content ------->
+
+<section class="location">
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d125550.49644933801!2d80.60193725745884!3d7.286866350815822!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ae366266498acd3%3A0x411a3818a1e03c35!2sKandy!5e0!3m2!1sen!2slk!4v1693678189302!5m2!1sen!2slk" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+</section>
+
+<section class="contact-us">
+    <div class="row">
+        <div class="contact-col">
+            <div>
+                <i class="fa fa-home"></i>
+                <span>
+                    <h5>XZA Road , ABC Kandy</h5>
+                    <p>Bkshdf , agsyufgyu, SL</p>
+                </span>
+            </div>
+            <div>
+                <i class="fa fa-phone"></i>
+                <span>
+                    <h5>+94 011 451 3 231</h5>
+                    <p>Monday to Saturday, 10AM to 6 PM</p>
+                </span>
+            </div>
+            <div>
+                <i class="fa fa-envelope-o"></i>
+                <span>
+                    <h5>bloomshase@gmail.com</h5>
+                    <p>Email us your query</p>
+                </span>
+            </div>
+        </div>
+        <div class="contact-col">
+           <form action="">
+                <input type="text" placeholder="Enter Your Name" required="required" />
+                <input type="email" placeholder="Enter Email Address" required="required" />
+                <input type="text" placeholder="Enter Your Subject" required="required" />
+                <textarea rows="8" placeholder="Message" required="required" ></textarea>
+                <button type="submit" class="hero-btn red-btn">Send Message</button>
+           </form>
+        </div>
+    </div>
+</section>
+
+<!-- Footer -->
+<section class="footer">
+     <h4>About Us </h4>
+      <p>we're passionate about helping florists thrive. Our flower shop management system is designed to make running your business easier, so you can focus on crafting beautiful arrangements. <br> We believe in simplicity, efficiency, and supporting the creativity that makes every bouquet special.</p>
+     <div class="icons">
+        <i class="fa fa-facebook"></i>
+        <i class="fa fa-twitter"></i>
+        <i class="fa fa-instagram"></i>
+        <i class="fa fa-linkedin"></i>
+     </div>
+     
+</section>
+<!-- Javascript -->
+<script>
+    var navLink = document.getElementById('nav-links');
+    function showMenu(){
+        navLink.style.right = "0";
+    }
+     function hideMenu(){
+        navLink.style.right = "-200px";
+    }
+</script>
+</body>
+</html>

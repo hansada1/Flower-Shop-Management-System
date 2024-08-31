@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - Blooms</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-image: url('flower.jpg');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 0;
+        }
+
+        .form-container {
+            background-color: rgba(255, 255, 255, 0.9);
+            padding: 40px;
+            border-radius: 10px;
+            width: 300px;
+            text-align: center;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .form-container h2 {
+            margin-bottom: 20px;
+            color: #007bff;
+        }
+
+        .form-input {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            box-sizing: border-box;
+        }
+
+        .form-button {
+            width: 100%;
+            padding: 10px;
+            background-color: #007bff;
+            border: none;
+            color: white;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 1rem;
+        }
+
+        .form-button:hover {
+            background-color: #0056b3;
+        }
+
+        .form-links {
+            margin-top: 20px;
+        }
+
+        .form-links a {
+            text-decoration: none;
+            color: #007bff;
+        }
+
+        .form-links a:hover {
+            color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <div class="form-container">
+        <h2>Login to Blooms</h2>
+        <form action="login.php" method="post">
+            <input class="form-input" type="text" name="username" placeholder="Username" required>
+            <input class="form-input" type="password" name="password" placeholder="Password" required>
+            <button class="form-button" type="submit">Login</button>
+        </form>
+        <div class="form-links">
+            <p>Don't have an account? <a href="reg.html">Register here</a></p>
+            <p><a href="index.html">Go to Main Page</a></p>
+        </div>
+    </div>
+</body>
+</html>
